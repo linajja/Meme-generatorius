@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            height: 100vh;
+        }
+
+        body>div {
+            position: relative;
+        }
+
+        .text-bot {
+            position: absolute;
+            color: white;
+            bottom: 25px;
+            width: 100%;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 40px;
+            font-weight: 900;
+            text-shadow: 2px 2px red;
+        }
+
+        .text-up {
+            position: absolute;
+            color: white;
+            top: 25px;
+            width: 100%;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 40px;
+            font-weight: 900;
+            text-shadow: 2px 2px red;
+        }
+
+        .img {
+            float: left;
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .btn {
+            display: flex;
+            flex-direction: row;
+            margin-top: 40px;
+            background-color: rgb(231, 225, 225);
+            font-size: 20px;
+            color: green;
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+
+
+        }
+
+        .forma {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            width: 1000px;
+            margin: 15px;
+            border: 1px solid yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="text-up" class="text-up">Viršus</div>
+        <img class="img" id="img" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/autumn-in-the-white-mountains-of-new-hampshire-royalty-free-image-841380450-1531931081.jpg?crop=1.00xw:0.755xh;0,0.202xh&resize=1200:*" alt="vasara">
+        <div id="text-bot" class="text-bot">Apačia</div>
+    </div>
+    <form name="forma">
+        <p>
+            Viršutinis tekstas:
+        </p>
+        <input id="input-top" type="text" name="virsutinis">
+        <p>
+            Apatinis tekstas:
+        </p>
+        <input id="input-bot" type="text" name="apatinis">
+        <p>
+            Nuotraukos URL:
+        </p>
+        <input type="url" name="url">
+        <button class="btn" type="submit">
+            Generuoti
+        </button>
+    </form>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
