@@ -21,9 +21,10 @@
         }
 
         .text-bot {
+            text-transform: uppercase;
             position: absolute;
-            color: white;
-            bottom: 25px;
+            color: plum;
+            bottom: 5px;
             width: 100%;
             text-align: center;
             font-family: sans-serif;
@@ -33,9 +34,10 @@
         }
 
         .text-up {
+            text-transform: uppercase;
             position: absolute;
-            color: white;
-            top: 25px;
+            color: plum;
+            top: 15px;
             width: 100%;
             text-align: center;
             font-family: sans-serif;
@@ -54,9 +56,11 @@
         .btn {
             display: flex;
             flex-direction: row;
+            justify-content: center;
+            padding: 5px;
             margin-top: 40px;
             background-color: rgb(231, 225, 225);
-            font-size: 20px;
+            font-size: 15px;
             color: green;
             width: 100px;
             height: 30px;
@@ -78,9 +82,9 @@
 
 <body>
     <div>
-        <div id="text-up" class="text-up">Viršus</div>
+        <h id="text-up" class="text-up">Viršus</h>
         <img class="img" id="img" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/autumn-in-the-white-mountains-of-new-hampshire-royalty-free-image-841380450-1531931081.jpg?crop=1.00xw:0.755xh;0,0.202xh&resize=1200:*" alt="vasara">
-        <div id="text-bot" class="text-bot">Apačia</div>
+        <h1 id="text-bot" class="text-bot">Apačia</h1>
     </div>
     <form name="forma">
         <p>
